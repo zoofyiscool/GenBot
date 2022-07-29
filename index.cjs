@@ -10,12 +10,14 @@ client.on("ready", async () =>
 client.on("message", async (message) => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-    
     if (! message.content.startsWith(prefix) || message.author.bot) {
         return;
     }
     if (command === "ping") {
-        message.channel.sendMessage("pong");
+        message.channel.sendMessage("Pong! :ping_pong:");
+    }
+    else if (command === "deez") {
+        message.channel.sendMessage(":troll_smile:");
     }
 });
 
