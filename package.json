@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "revolt.js": "^6.0.12"
+  }
+}
