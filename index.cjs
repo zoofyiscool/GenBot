@@ -31,6 +31,9 @@ client.on("message", async (message) => {
     else if (command === "deez") {
         message.channel.sendMessage(":troll_smile:");
     }
+    else if (command === "genchu") {
+        message.channel.sendMessage("genchu gnwu/linwux :flushee: :amogus:");
+    }
 });
 
 client.loginBot(process.env.TOKEN);
