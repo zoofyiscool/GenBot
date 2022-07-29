@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "revolt.js": "^6.0.12"
-  }
+  },
+  "name": "genbot",
+  "description": "Revolt bot for the unofficial Gentoo Linux discord server [Server Link](https://app.revolt.chat/invite/HW3zvqq3)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoofyiscool/GenBot.git"
+  },
+  "author": "ouxiez",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/zoofyiscool/GenBot/issues"
+  },
+  "homepage": "https://github.com/zoofyiscool/GenBot#readme"
 }
