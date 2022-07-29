@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.1",
     "revolt.js": "^6.0.12"
   },
   "name": "genbot",
-  "description": "Revolt bot for the unofficial Gentoo Linux discord server [Server Link](https://app.revolt.chat/invite/HW3zvqq3)",
+  "description": "Revolt bot for the unofficial Gentoo Linux discord server",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
