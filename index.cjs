@@ -1,6 +1,5 @@
-import { Client } from "revolt.js";
-import * as dotenv from 'dotenv';
-dotenv.config();
+const { Client } = require("revolt.js");
+require('dotenv').config();
 
 let client = new Client();
 
