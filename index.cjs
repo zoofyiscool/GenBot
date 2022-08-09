@@ -7,6 +7,10 @@ client.on("ready", async () =>
     console.info(`Logged in as ${client.user.username}!`),
 );
 
+//client.req("PATCH", `/users/@me`, {
+//    status: {presence: "Online", text: "prefix: doas | funny bot uwu"},
+//});
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -24,7 +28,18 @@ client.on("message", async (message) => {
         fetch(`https://meme-api.herokuapp.com/gimme`)
         .then(res => res.json())
         .then(async json => {
-            message.channel.sendMessage(`${json.title}`);
+            message.channel.sendMessage({
+            content: " ",
+            embeds: [
+                    {
+                        type: "Text",
+                        title: `${json.title}`,
+                        description: "image below because revolt.js a bitch",
+                        colour: "#FFFFFF",
+                    },
+            ],
+            });
+            //message.channel.sendMessage(`${json.title}`);
             message.channel.sendMessage(`${json.url}`);
         })
     }
